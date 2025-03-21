@@ -1,4 +1,14 @@
-import { FilePen, Hourglass, LucideProps } from "lucide-react";
+import {
+  CloudUpload,
+  Figma,
+  FilePen,
+  Hourglass,
+  KeyboardOff,
+  LucideProps,
+  PenTool,
+  ShoppingCart,
+  TerminalIcon,
+} from "lucide-react";
 
 export const navItems: { id: number; label: string; href: string }[] = [
   { id: 1, label: "Home", href: "/" },
@@ -28,48 +38,53 @@ export const whatGet: {
   },
 ];
 
-export const servicesData = [
+export const servicesList: {
+  id: number;
+  title: string;
+  description: string;
+  icon: React.ComponentType<LucideProps>;
+}[] = [
   {
     id: 1,
     title: "Web Development",
     description:
       "We build fast, secure, and scalable websites tailored to your business needs using the latest technologies.",
-    thumbnail: "/images/web-development.png",
+    icon: TerminalIcon,
   },
   {
     id: 2,
     title: "UI/UX Design",
     description:
       "We design intuitive, engaging, and user-friendly interfaces that enhance user experience and boost conversions.",
-    thumbnail: "/images/ui-ux-design.png",
+    icon: PenTool,
   },
   {
     id: 3,
     title: "E-commerce Solutions",
     description:
       "From product listings to payment gateways, we create seamless e-commerce platforms that drive sales and engagement.",
-    thumbnail: "/images/ecommerce.png",
+    icon: ShoppingCart,
   },
   {
     id: 4,
     title: "SEO Optimization",
     description:
       "Improve your website’s visibility with our SEO strategies, ensuring higher rankings and organic traffic growth.",
-    thumbnail: "/images/seo-optimization.png",
+    icon: CloudUpload,
   },
   {
     id: 5,
     title: "No-Code Development",
     description:
       "We provide no-code solutions to help businesses create functional websites and apps without technical expertise.",
-    thumbnail: "/images/nocode-development.png",
+    icon: KeyboardOff,
   },
   {
     id: 6,
     title: "Graphic Design",
     description:
       "Enhance your brand identity with eye-catching graphics, including logos, marketing materials, and social media visuals.",
-    thumbnail: "/images/graphic-design.png",
+    icon: Figma,
   },
 ];
 
