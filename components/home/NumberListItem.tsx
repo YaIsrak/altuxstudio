@@ -1,18 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { SlidingNumber } from "../motion-primitives/sliding-number";
+import { BlurFade } from "../ui/blur-fade";
+import { SlidingNumber } from "../ui/sliding-number";
 
 export default function NumberListItem({
   number,
   type,
   description,
   prefix,
+  index: i,
 }: {
   number: number;
   type: string;
   description: string;
   prefix?: string;
+  index: number;
 }) {
   const [value, setValue] = useState(0);
 
@@ -26,16 +29,15 @@ export default function NumberListItem({
   }, [value, number]);
 
   return (
-    <div className="flex pb-12">
+    <BlurFade inView delay={0.05 * i} className="flex pb-12">
       <div className="flex text-9xl">
         <SlidingNumber value={value} />
-        {/* {number} */}
         <span className="text-7xl">{prefix}</span>
       </div>
       <p>({type})</p>
       <p className="text-muted-foreground self-end text-lg font-medium">
         {description}
       </p>
-    </div>
+    </BlurFade>
   );
 }
