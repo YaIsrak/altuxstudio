@@ -19,6 +19,11 @@ const monument = localFont({
 			weight: '700',
 			style: 'normal',
 		},
+		{
+			path: '../public/fonts/MonumentExtended-black.otf',
+			weight: '900',
+			style: 'normal',
+		},
 	],
 	variable: '--font-bold-sans',
 });
@@ -40,7 +45,7 @@ export default function RootLayout({
 			className='dark'
 			suppressHydrationWarning>
 			<body
-				className={`${inter.className} ${monument.variable} antialiased`}>
+				className={`${inter.className} ${monument.variable} antialiased w-full h-full`}>
 				{children}
 			</body>
 		</html>
