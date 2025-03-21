@@ -1,3 +1,5 @@
+import { FilePen, Hourglass, LucideProps } from "lucide-react";
+
 export const navItems: { id: number; label: string; href: string }[] = [
   { id: 1, label: "Home", href: "/" },
   { id: 2, label: "About", href: "#about" },
@@ -5,32 +7,25 @@ export const navItems: { id: number; label: string; href: string }[] = [
   { id: 4, label: "Projects", href: "#projects" },
 ];
 
-export const whatGet = [
+export const whatGet: {
+  id: number;
+  title: string;
+  description: string;
+  icon: React.ComponentType<LucideProps>;
+}[] = [
   {
     id: 1,
     title: "Custom Design",
     description:
       "Visually stunning, user-friendly, and fully responsive designs.",
-    thumbnail: "/images/custom.png",
+    icon: FilePen,
   },
   {
     id: 2,
     title: "Fast Turnaround",
     description: "High-quality work delivered on time, every time.",
-    thumbnail: "/images/fastTurn.png",
+    icon: Hourglass,
   },
-  {
-    id: 3,
-    title: "Affordable Excellence",
-    description: "Top-notch services at competitive prices.",
-    thumbnail: "/images/affordable.png",
-  },
-  // {
-  //   id: 4,
-  //   title: "Reliable Results",
-  //   description: "We promise success and deliver it consistently.",
-  //   thumbnail: "/reliable.png",
-  // },
 ];
 
 export const servicesData = [
