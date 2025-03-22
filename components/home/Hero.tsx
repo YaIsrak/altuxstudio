@@ -11,6 +11,15 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute -z-30 h-full w-full object-cover"
+      >
+        <source src="/images/hero_background_video.mp4" type="video/mp4" />
+      </video>
       <div className="to-background absolute -z-20 h-full w-full bg-gradient-to-b from-transparent" />
 
       {/* main container */}

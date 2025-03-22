@@ -62,7 +62,10 @@ export default function Navbar() {
             <Link
               href={item.href}
               key={item.id}
-              className="text-muted-foreground after:bg-muted-foreground hover:text-foreground font-bold-sans relative inline-block w-full px-2 py-2 text-sm no-underline transition-all duration-200 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-200 hover:-translate-y-0.5 hover:after:w-full"
+              className={cn(
+                "text-muted-foreground after:bg-muted-foreground hover:text-foreground font-bold-sans relative inline-block w-full px-2 py-2 text-sm no-underline transition-all duration-200 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-200 hover:-translate-y-0.5 hover:after:w-full",
+                !isScrolled && "text-foreground",
+              )}
             >
               {item.label}
             </Link>
