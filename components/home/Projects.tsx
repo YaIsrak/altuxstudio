@@ -7,7 +7,7 @@ import { TextRoll } from "../ui/text-roll";
 
 export default function Projects() {
   return (
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto px-4" id="projects">
       <h2 className="text-4xl font-normal tracking-tight">Projects</h2>
 
       <Separator className="my-6" />

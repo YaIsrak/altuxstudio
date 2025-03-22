@@ -5,7 +5,7 @@ import { Separator } from "../ui/separator";
 
 export default function Services() {
   return (
-    <section className="container mx-auto px-4 py-[15vmin]">
+    <section className="container mx-auto px-4 py-[15vmin]" id="services">
       <h2 className="text-5xl font-normal tracking-tight uppercase">
         Services We Offer
       </h2>

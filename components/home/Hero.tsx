@@ -10,19 +10,6 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen">
-      {/* <Waves
-        lineColor="rgba(255, 255, 255, 0.2)"
-        waveSpeedX={0.02}
-        waveSpeedY={0.01}
-        waveAmpX={40}
-        waveAmpY={20}
-        friction={0.9}
-        tension={0.01}
-        maxCursorMove={120}
-        xGap={12}
-        yGap={36}
-        className="-z-30"
-      /> */}
       <div className="to-background absolute -z-20 h-full w-full bg-gradient-to-b from-transparent" />
 
       {/* main container */}

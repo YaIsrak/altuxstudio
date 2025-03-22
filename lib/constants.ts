@@ -11,10 +11,10 @@ import {
 } from "lucide-react";
 
 export const navItems: { id: number; label: string; href: string }[] = [
-  { id: 1, label: "Home", href: "/" },
-  { id: 2, label: "About", href: "#about" },
-  { id: 3, label: "Services", href: "#services" },
+  { id: 1, label: "Home", href: "/#" },
   { id: 4, label: "Projects", href: "#projects" },
+  { id: 3, label: "Services", href: "#services" },
+  { id: 2, label: "About", href: "#about" },
 ];
 
 export const whatGet: {
