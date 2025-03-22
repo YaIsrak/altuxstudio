@@ -19,7 +19,7 @@ export default function Navbar() {
       data-state={isOpen ? "active" : "closed"}
       className={cn(
         "fixed z-20 w-full bg-transparent py-4 transition-all",
-        isScrolled && "bg-background/50 border-b backdrop-blur",
+        isScrolled && "bg-background/50 border-muted border-b backdrop-blur-xl",
       )}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between px-2 md:px-4">
@@ -83,7 +83,7 @@ export default function Navbar() {
             }}
             transition={{ duration: 0.2 }}
             className={cn(
-              "bg-background/50 mx-2 mt-6 w-full space-y-8 rounded-3xl border p-6 backdrop-blur-lg",
+              "bg-background/60 mx-2 mt-6 w-full space-y-8 rounded-3xl border p-6 backdrop-blur-2xl",
             )}
           >
             <div className="lg:hidden">

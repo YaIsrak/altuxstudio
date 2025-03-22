@@ -29,7 +29,7 @@ function Card({
   icon: React.ComponentType<LucideProps>;
 }) {
   return (
-    <div className="relative rounded-2xl border">
+    <div className="relative overflow-hidden rounded-2xl border">
       <BorderTrail
         style={{
           boxShadow:
