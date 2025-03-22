@@ -3,10 +3,10 @@
 import {
   AnimatePresence,
   motion,
+  MotionProps,
   useInView,
   UseInViewOptions,
   Variants,
-  MotionProps,
 } from "motion/react";
 import { useRef } from "react";
 
@@ -35,8 +35,8 @@ export function BlurFade({
   duration = 0.4,
   delay = 0,
   offset = 6,
-  direction = "down",
-  inView = false,
+  direction = "up",
+  inView = true,
   inViewMargin = "-50px",
   blur = "6px",
   ...props

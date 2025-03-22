@@ -70,7 +70,9 @@ export default function Navbar() {
         </div>
 
         {/* cta */}
-        <Button className="hidden lg:block">Get Started</Button>
+        <Button size="sm" className="hidden text-xs tracking-tight lg:block">
+          Get Started
+        </Button>
 
         {/* mobile menu */}
         {isOpen && (

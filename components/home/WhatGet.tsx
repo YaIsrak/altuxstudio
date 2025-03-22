@@ -1,21 +1,26 @@
 import { whatGet } from "@/lib/constants";
 import { LucideProps } from "lucide-react";
+import { BlurFade } from "../ui/blur-fade";
 import { BorderTrail } from "../ui/border-trail";
 import { MagicCard } from "../ui/magic-card";
 
 export default function WhatGet() {
   return (
-    <section className="container mx-auto px-4 py-[15vmin]" id="what-get">
-      <h2 className="text-4xl font-normal tracking-tight uppercase">
-        What you’ll get
-      </h2>
+    <BlurFade>
+      <section className="container mx-auto px-4 py-[15vmin]" id="what-get">
+        <h2 className="text-4xl font-normal tracking-tight uppercase">
+          What you’ll get
+        </h2>
 
-      <div className="mt-4 grid grid-cols-2 gap-4">
-        {whatGet.map((item) => (
-          <Card key={item.title} {...item} />
-        ))}
-      </div>
-    </section>
+        <div className="mt-4 grid grid-cols-2 gap-4">
+          {whatGet.map((item, i) => (
+            <BlurFade key={item.title} delay={0.1 * i}>
+              <Card key={item.title} {...item} />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+    </BlurFade>
   );
 }
 

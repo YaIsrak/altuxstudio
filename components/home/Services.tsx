@@ -1,23 +1,28 @@
 import { servicesList } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { LucideProps } from "lucide-react";
+import { BlurFade } from "../ui/blur-fade";
 import { Separator } from "../ui/separator";
 
 export default function Services() {
   return (
-    <section className="container mx-auto px-4 py-[15vmin]" id="services">
-      <h2 className="text-5xl font-normal tracking-tight uppercase">
-        Services We Offer
-      </h2>
+    <BlurFade>
+      <section className="container mx-auto px-4 py-[15vmin]" id="services">
+        <h2 className="text-5xl font-normal tracking-tight uppercase">
+          Services We Offer
+        </h2>
 
-      <Separator className="my-4" />
+        <Separator className="my-4" />
 
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-        {servicesList.map((feature, index) => (
-          <Card key={feature.title} {...feature} index={index} />
-        ))}
-      </div>
-    </section>
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+          {servicesList.map((feature, index) => (
+            <BlurFade key={feature.title} delay={0.07 * index}>
+              <Card key={feature.title} {...feature} index={index} />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+    </BlurFade>
   );
 }
 
