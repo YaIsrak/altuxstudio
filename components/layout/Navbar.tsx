@@ -57,12 +57,12 @@ export default function Navbar() {
         </div>
 
         {/* menu */}
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           {navItems.map((item) => (
             <Link
               href={item.href}
               key={item.id}
-              className="font-bold-sans text-muted-foreground hover:text-foreground relative text-sm transition-all ease-in-out hover:-translate-y-0.5"
+              className="text-muted-foreground after:bg-muted-foreground hover:text-foreground font-bold-sans relative inline-block w-full px-2 py-2 text-sm no-underline transition-all duration-200 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-200 hover:-translate-y-0.5 hover:after:w-full"
             >
               {item.label}
             </Link>
@@ -87,12 +87,12 @@ export default function Navbar() {
             )}
           >
             <div className="lg:hidden">
-              <ul className="space-y-6 text-base">
+              <ul className="text-base">
                 {navItems.map((item, index) => (
                   <li key={index}>
                     <Link
                       href={item.href}
-                      className="text-muted-foreground hover:text-foreground font-bold-sans transition-colors"
+                      className="text-muted-foreground after:bg-muted-foreground hover:text-foreground font-bold-sans relative inline-block w-full py-4 no-underline transition-all duration-200 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-200 hover:-translate-y-0.5 hover:after:w-full"
                     >
                       <span>{item.label}</span>
                     </Link>

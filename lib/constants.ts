@@ -124,7 +124,15 @@ export const testimonialData = [
 ];
 
 // projects
-export const projectData = [
+export const projectList: {
+  id: number;
+  title: string;
+  link: string;
+  description: string;
+  technologies: string[];
+  features: string[];
+  image: string;
+}[] = [
   {
     id: 1,
     title: "Visionary Creative – Digital Agency Website",

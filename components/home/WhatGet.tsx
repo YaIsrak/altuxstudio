@@ -6,7 +6,9 @@ import { MagicCard } from "../ui/magic-card";
 export default function WhatGet() {
   return (
     <section className="container mx-auto px-4 py-[15vmin]" id="what-get">
-      <h2 className="text-4xl tracking-tight">What you’ll get</h2>
+      <h2 className="text-4xl font-normal tracking-tight uppercase">
+        What you’ll get
+      </h2>
 
       <div className="mt-4 grid grid-cols-2 gap-4">
         {whatGet.map((item) => (
