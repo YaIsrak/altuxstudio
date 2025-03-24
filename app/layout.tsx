@@ -20,7 +20,7 @@ const monument = localFont({
       style: "normal",
     },
     {
-      path: "../public/fonts/MonumentExtended-black.otf",
+      path: "../public/fonts/MonumentExtended-Black.otf",
       weight: "900",
       style: "normal",
     },
