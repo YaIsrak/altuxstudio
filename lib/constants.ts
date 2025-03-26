@@ -88,146 +88,62 @@ export const servicesList: {
   },
 ];
 
-export const testimonialData = [
-  {
-    id: 1,
-    name: "Abdullah Rahman",
-    designation: "CEO, TechCorp",
-    image: "/images/review1.jpg",
-    feedback:
-      "The team at Altux Studio exceeded our expectations. They delivered a stunning and highly functional website that helped boost our online presence.",
-  },
-  {
-    id: 2,
-    name: "Sarah Smith",
-    designation: "Marketing Head, TrendHive ",
-    image: "/images/review2.jpg",
-    feedback:
-      "Fantastic experience! The attention to detail and creativity in web development was outstanding. Highly recommend their services.",
-  },
-  {
-    id: 3,
-    name: "Benjamin Carter ",
-    designation: "Product Manager, Visionary Labs",
-    image: "/images/review3.png",
-    feedback:
-      "Altux Studio provided excellent support and built an intuitive platform for us. The process was smooth, and the results were impressive!",
-  },
-  {
-    id: 4,
-    name: "Daniel Parker",
-    designation: "Founder, InnovateX",
-    image: "/images/review4.jpg",
-    feedback:
-      "Altux Studio provided excellent support and built an intuitive platform for us. The process was smooth, and the results were impressive!",
-  },
-];
-
 // projects
 export const projectList: {
   id: number;
   title: string;
   link: string;
-  description: string;
-  technologies: string[];
-  features: string[];
+  description?: string;
+  technologies?: string[];
+  features?: string[];
   image: string;
 }[] = [
   {
     id: 1,
-    title: "Visionary Creative – Digital Agency Website",
-    link: "https://visionarycreative.com",
-    description:
-      "A sleek, modern website for a digital marketing agency, featuring interactive animations and dynamic content management.",
-    technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "Sanity CMS"],
-    features: [
-      "Fully responsive and animated UI",
-      "Custom CMS for easy content management",
-      "Portfolio showcase with case studies",
-      "SEO-optimized pages",
-      "Interactive service offerings with motion effects",
-    ],
-    image: "/images/project.png",
+    title: "Leadsage – Digital Agency Website",
+    link: "https://leadsage.com",
+    image: "/images/projects/1.jpeg",
   },
   {
     id: 2,
-    title: "TrendHive – E-Commerce Store",
-    link: "https://trendhive.com",
-    description:
-      "A modern e-commerce store with seamless shopping experience, dynamic filtering, and secure checkout.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Stripe API",
-      "Tailwind CSS",
-      "MongoDB",
-    ],
-    features: [
-      "Product filtering and sorting",
-      "User authentication with JWT",
-      "Secure payments with Stripe",
-      "Admin dashboard for product & order management",
-      "Wishlist and cart functionalities",
-    ],
-    image: "/images/project.png",
+    title: "Alvarado",
+    link: "https://alvarado.com",
+    image: "/images/projects/2.jpeg",
   },
   {
     id: 3,
-    title: "EliteFit – Fitness & Wellness Platform",
-    link: "https://elitefit.com",
-    description:
-      "A fitness and wellness platform offering online workout plans, diet tracking, and virtual coaching.",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Firebase",
-      "GraphQL",
-      "Tailwind CSS",
-    ],
-    features: [
-      "Live workout classes",
-      "Diet and fitness plan customization",
-      "User dashboard with progress tracking",
-      "Subscription-based model with Stripe",
-      "Social media integrations for community engagement",
-    ],
-    image: "/images/project.png",
+    title: "Marissa",
+    link: "https://ammymash.com",
+    image: "/images/projects/3.jpeg",
   },
   {
     id: 4,
-    title: "SnapShoot – Photography Portfolio",
-    link: "https://snapshoot.com",
-    description:
-      "A stunning photography portfolio website with high-resolution galleries and seamless user experience.",
-    technologies: ["Gatsby.js", "GraphQL", "Tailwind CSS", "Cloudinary"],
-    features: [
-      "High-performance image optimization",
-      "Dynamic photo galleries",
-      "Custom contact forms",
-      "Lightbox image previews",
-      "SEO-friendly static site generation",
-    ],
-    image: "/images/project.png",
+    title: "Aldenair law farm",
+    link: "https://aldenair.com",
+    image: "/images/projects/4.jpeg",
   },
   {
     id: 5,
-    title: "FoodieFinds – Restaurant Discovery App",
-    link: "https://foodiefinds.com",
-    description:
-      "A restaurant discovery platform that helps users find the best dining experiences near them.",
-    technologies: [
-      "React Native",
-      "Firebase",
-      "Google Maps API",
-      "Tailwind CSS",
-    ],
-    features: [
-      "Location-based restaurant recommendations",
-      "User reviews and ratings",
-      "Interactive maps with real-time updates",
-      "Restaurant profile management for business owners",
-      "Social sharing and bookmarking",
-    ],
-    image: "/images/project.png",
+    title: "Nexus",
+    link: "https://nexus.com",
+    image: "/images/projects/5.jpeg",
+  },
+  {
+    id: 6,
+    title: "E-commerce",
+    link: "https://ecommerce.com",
+    image: "/images/projects/6.jpeg",
+  },
+  {
+    id: 7,
+    title: "Tesla ev",
+    link: "https://tesla.com",
+    image: "/images/projects/7.jpeg",
+  },
+  {
+    id: 8,
+    title: "Larana.Inc",
+    link: "https://reallygreatsite.com",
+    image: "/images/projects/8.jpeg",
   },
 ];
