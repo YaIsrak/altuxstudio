@@ -23,11 +23,6 @@ export function ProjectCard({
         />
       </div>
 
-      {/* title */}
-      {/* <h4 className="md:tex-2xl my-2 text-xl font-normal tracking-tight">
-        {title}
-      </h4> */}
-
       {/* link */}
       <p className="text-muted-foreground after:bg-muted-foreground group-hover/card:text-foreground relative inline-block w-full py-2 text-sm no-underline duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-200 group-hover/card:after:w-full">
         View Details

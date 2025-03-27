@@ -22,7 +22,7 @@ export default function Projects() {
       <div className="container mx-auto px-4" id="projects">
         <h2 className="text-4xl font-normal tracking-tight">Projects</h2>
 
-        <Separator className="my-4" />
+        <Separator className="my-8" />
       </div>
 
       <Carousel
@@ -37,7 +37,7 @@ export default function Projects() {
       >
         <CarouselContent className="cursor-grab">
           {projectList.map((project, index) => (
-            <CarouselItem key={index} className="basis-1/2">
+            <CarouselItem key={index} className="basis-1/2 pl-2">
               <div
                 className={cn(
                   "relative transition-all",
